@@ -1,0 +1,34 @@
+
+### GET all  course
+GET http://localhost:3000/courses
+
+### GET course
+GET http://localhost:3000/localhost:3000/get/1
+
+### ADD A course
+POST http://localhost:3000/add/course
+Content-Type: application/json
+
+{
+    "name": "c++",
+    "price": 40008
+}
+
+### UPDATE price
+PATCH http://localhost:3000/update
+Content-Type: application/json
+
+{
+    "id" : "2",
+    "price": 500
+}
+
+
+###DELETE A course
+DELETE http://localhost:3000/delete
+Content-Type: application/json
+
+{
+    "id": "2"
+}
+
